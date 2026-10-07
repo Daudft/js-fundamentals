@@ -1,5 +1,4 @@
 
-
 //Selection
 let h1 = document.querySelector("h1");
 h1.textContent = "Hy From Js"
@@ -60,12 +59,3 @@ imgs.forEach(function(val){
 //         img.setAttribute("src", val);
 //     }, index * 1000); // 0s, 1s, 2s delay between each
 // });
-
-
-
-
-
-
-
-
-
