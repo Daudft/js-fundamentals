@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 20%;
+    height: 50%;
+    background-color: rgb(157, 165, 165);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+i{
+    position: absolute;
+    font-size: 110px;
+    background-image: url(https://img.magnific.com/free-vector/instagram-background-gradient-colors_23-2147819864.jpg?semt=ais_hybrid&w=740&q=80);
+    background-clip: text;
+    color: transparent;
+    background-position: center;
+    opacity: 0;
+    
+    transition: all cubic-bezier(.75,.83,.18,1.3) 0.5s;
+}
