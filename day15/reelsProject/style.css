@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 36, 36);
+    padding: 20px;
+}
+section{
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: black;
+}
+.reel-cover{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 7px;
+    overflow: hidden;
+}
+.reel{
+    width: 100%;
+    height: 100%;
+    background-color: blue;  
+    position: relative;
+}
+.reel .main-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reel .bottom{
+    width: 100%;
+    padding: 20px;
+   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.reel .bottom .pro-img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user h3{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom .f-btn{
+    
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 2px;
+}
