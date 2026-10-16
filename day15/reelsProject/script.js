@@ -66,7 +66,7 @@ reels.forEach(function(elem,idx){
                         <div class="user">
                               <img class="pro-img" src="${elem.img}" alt="">
                         <h3>${elem.username}</h3>
-                        <button class="f-btn">${elem.isFollowed ? "Following" : "Follow"}</button>
+                        <button id=${idx} class="f-btn">${elem.isFollowed ? "Following" : "Follow"}</button>
 
                         </div>
                         <p>${elem.description}</p>
@@ -101,7 +101,13 @@ reelCover.innerHTML = sum;
 reelData();
 
 reelCover.addEventListener("click",function(dets){
-    if(!(reels[dets.target.id].isLiked)){
+    
+    
+   
+
+    console.log(dets.target.className)
+    if(dets.target.className == "like"){
+         if(!(reels[dets.target.id].isLiked)){
         reels[dets.target.id].likeCount++;
     reels[dets.target.id].isLiked = true
 
@@ -109,10 +115,23 @@ reelCover.addEventListener("click",function(dets){
          reels[dets.target.id].likeCount--;
          reels[dets.target.id].isLiked = false
     }
+    reelData();
+
+    }
+    if(dets.target.className == "f-btn"){
+        if(!(reels[dets.target.id].isFollowed)){
+            reels[dets.target.id].isFollowed = true
+        }else{
+            reels[dets.target.id].isFollowed = false
+        }
+    
+reelData();
+
+    
     
 
-    reelData();
-})
+    
+}})
 
 
 
