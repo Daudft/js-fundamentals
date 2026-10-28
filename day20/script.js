@@ -79,3 +79,6 @@ let obj = {
         console.log("huihui")
 
     }
+
+
+    
