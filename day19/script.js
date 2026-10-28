@@ -123,3 +123,20 @@ loginUser("haya",function(data){
     })
     
 })
+
+
+//Promise
+
+let prm = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve();
+    },3000)
+})
+
+prm
+.then(function(){
+    console.log("hlo resolved");
+})
+.catch(function(){
+    console.log("hlo rejected")
+})
