@@ -42,3 +42,40 @@ abc();
 //Error Handling
 
 //Syntax Error , Runtime Error
+
+// lest b = 6;
+// Uncaught SyntaxError: Unexpected identifier 'b' (at script.js:46:6)
+
+//Runtime
+let obj = {
+    a:3
+}
+// console.log(a.name);//undefined
+// console.log(a.name.age);//script.js:54 Uncaught TypeError: Cannot read properties of undefined (reading 'age')
+    // at script.js:54:20+
+
+    // try and catch
+
+    try{
+        let a = 5;
+        let b = a.name.jlo
+    }catch(err){
+        console.log(err)//code working 
+        console.log(err.name);//TypeError
+        console.log(err.message)//Cannot read properties of undefined (reading 'jlo')
+        
+    }
+
+
+    try{
+    let c = 8;
+     let d = c.name.al
+
+    }catch(err){
+      throw new Error("This is the problem dude")  
+
+    }
+    finally{
+        console.log("huihui")
+
+    }
